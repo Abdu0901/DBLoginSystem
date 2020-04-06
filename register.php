@@ -8,9 +8,9 @@
 <body>
     <div>
         <div class="m-5 card">
-            <h5 class="card-header">PHP Database Login System - Login</h5>
+            <h5 class="card-header">PHP Database Login System - Register</h5>
             <div class="card-body">
-                <form action="doLogin.php" method="POST">
+                <form action="doRegister.php" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Username</label>
                         <input type="text" name="username" class="form-control" id="exampleInputEmail1"
@@ -21,7 +21,7 @@
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1"
                             placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>
         </div>
