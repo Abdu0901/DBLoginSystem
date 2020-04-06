@@ -1,8 +1,16 @@
-<html>
-<body>
+<?php 
 
-Welcome <?php echo $_POST["username"]; ?><br>
-Your email address is: <?php echo $_POST["password"]; ?>
+include('dbConnect.php');
 
-</body>
-</html>
+$username = $_POST['username'];
+
+
+$query = "CALL select_user('".$username."')";
+
+$result = mysqli_query($mysqli, $query);
+
+$row = mysqli_fetch_assoc($result);
+
+echo $row["password"];
+
+?>
